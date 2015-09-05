@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="campernewsApp">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body ng-controller="CamperNewsCtrl">
+	<h1 class="text-center text-primary">FreeCodeCamp</h1>
+	<h2 class="text-center text-secondary">Camper News</h2>
+
+	<div class="main-section">
+		<ul class="stories">
+			<li ng-repeat="story in stories">
+				<a href="{{ story.link }}">
+					<div class="news-story well">
+						<img ng-src="{{story.image}}" class="news-image"/>
+						<h3>{{ story.headline }}</h3>
+						<a href="{{ story.commentsHyperlink }}">
+							<p class="story-comments pull-left">{{ story.commentsCount }} Comments</p>
+						</a>
+						<a href="{{ story.authorHyperlink }}">
+							<p class="story-author pull-right">{{ story.author.username }}</p>
+						</a>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>

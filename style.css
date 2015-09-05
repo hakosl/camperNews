@@ -1,0 +1,45 @@
+body{
+	background: url(https://images.unsplash.com/photo-1437422061949-f6efbde0a471?fit=crop&fm=jpg&q=80&w=1050) no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 6000px;
+}
+
+.main-section{
+	margin: auto;
+	width: 1100px;/*
+	height: 6000px;
+	column-fill: balance;
+	*/
+	-webkit-column-count: 4;
+	-moz-column-count: 4;
+	column-count: 4;
+	-webkit-column-gap: 3em;
+	-moz-column-gap: 3em;
+	column-gap: 3em;
+	overflow: visible;
+	-moz-column-fill: auto;
+         column-fill: auto;
+}
+
+.news-story{
+	width: 212px;
+}
+
+.news-image{
+	width: 100%;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+.stories{/*
+	column-count: auto;
+	column-fill: balance;
+	column-width: 212px;
+	height: 6000px;
+	*/
+}
+
